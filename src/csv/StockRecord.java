@@ -1,4 +1,4 @@
-package csv;
+package com.example.demo;
 
 public class StockRecord {
 
@@ -7,7 +7,7 @@ public class StockRecord {
 	
 	private String sede;
 	private String luogo;
-	private int num_hotspot;
+	private int numhotspot;
 	private double lat;
 	private double lon;
 	private String cod_impianto;
@@ -16,11 +16,11 @@ public class StockRecord {
 	
 	/** Methods */
 	
-	public StockRecord(String sede, String luogo, int num_hotspot, double lat, double lon, String cod_impianto,
+	public StockRecord(String sede, String luogo, int numhotspot, double lat, double lon, String cod_impianto,
 			String note) {
 		this.sede = sede;
 		this.luogo = luogo;
-		this.num_hotspot = num_hotspot;
+		this.numhotspot = numhotspot;
 		this.lat = lat;
 		this.lon = lon;
 		this.cod_impianto = cod_impianto;
@@ -40,11 +40,11 @@ public class StockRecord {
 	public void setLuogo(String luogo) {
 		this.luogo = luogo;
 	}
-	public int getNum_hotspot() {
-		return num_hotspot;
+	public int getNumhotspot() {
+		return numhotspot;
 	}
-	public void setNum_hotspot(int num_hotspot) {
-		this.num_hotspot = num_hotspot;
+	public void setNumhotspot(int numhotspot) {
+		this.numhotspot = numhotspot;
 	}
 	public double getLat() {
 		return lat;
@@ -73,7 +73,7 @@ public class StockRecord {
 
 	@Override
 	public String toString() {
-		return "StockRecord [sede=" + sede + ", luogo=" + luogo + ", num_hotspot=" + num_hotspot + ", lat=" + lat
+		return "StockRecord [sede=" + sede + ", luogo=" + luogo + ", num_hotspot=" + numhotspot + ", lat=" + lat
 				+ ", lon=" + lon + ", cod_impianto=" + cod_impianto + ", note=" + note + "]";
 	}
 	

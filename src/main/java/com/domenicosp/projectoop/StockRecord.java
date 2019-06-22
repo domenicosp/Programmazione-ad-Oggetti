@@ -9,7 +9,9 @@ package com.domenicosp.projectoop;
 
 public class StockRecord {
 
-	//Attributi 
+	/**
+	 * Attributi 
+	 */
 	
 	private String sede;
 	private String luogo;
@@ -19,13 +21,15 @@ public class StockRecord {
 	private String cod_impianto;
 	private String note;
 	
-	//Metodi base: Setter, Getter Costruttore della classe + override toString  
+	/**
+	 * Metodi base: Setter, Getter Costruttore della classe + override toString  
+	 */
 	
 	/** 
 	 * Costruttore della classe StockRecord
 	 *@param sede nome della sede
 	 *@param luogo via della citta
-	 *@param hotspot numero degli hotspot presenti 
+	 *@param numhotspot numero degli hotspot presenti 
 	 *@param lat latitudine 
 	 *@param lon longitudine
 	 *@param cod_impianto codice dell'impianto
@@ -44,9 +48,7 @@ public class StockRecord {
 		this.note = note;
 	}
 	
-	public StockRecord() {
-		// TODO Auto-generated constructor stub
-	}
+	public StockRecord() {}
 
 	/**
 	 * Fornisce il nome della sede
@@ -55,11 +57,7 @@ public class StockRecord {
 	public String getSede() {
 		return sede;
 	}
-	
-//	public Method getSede1() {
-//		return getSede();
-//	}
-//	
+
 	 /**
      * Imposta l'attributo sede
      * @param sede stringa

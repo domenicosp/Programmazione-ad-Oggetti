@@ -5,7 +5,6 @@ import com.opencsv.CSVReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-//import org.springframework.stereotype.Component;
 
 /**
  * Classe Stockdata che estende {@link StockRecord}  
@@ -18,7 +17,9 @@ import java.util.ArrayList;
 
 public class StockData extends StockRecord  {
 
-	//Attributi della classe StockData
+	/**
+	 * Attributi della classe StockData
+	 */
 	
 	private static String filepath = "hotspot.csv";
 	private static ArrayList<StockRecord> records = new ArrayList<StockRecord>();
@@ -29,7 +30,6 @@ public class StockData extends StockRecord  {
 	public StockData(String sede, String luogo, int numhotspot, double lat, double lon, String cod_impianto,
 			String note) {
 		super(sede, luogo, numhotspot, lat, lon, cod_impianto, note);
-		// TODO Auto-generated constructor stub
 	}
 	
 	/**
@@ -43,7 +43,7 @@ public class StockData extends StockRecord  {
 	
 	/**
 	 * Imposta l'arraylist di tipo StockRecord
-	 * @return records ArrayList<StockRecord>
+	 * @return records {@code ArrayList<StockRecord>}
 	 */
 	public static ArrayList<StockRecord> getRecords() {
 		return records;
@@ -66,7 +66,7 @@ public class StockData extends StockRecord  {
      * loadDataFromFile legge il file csv contenente i record da prelevare, 
      * ad ogni riga corrisponde un oggetto StockRecord,
      * esegue il parsing del file e restituisce un ArrayList di Stockrecord (quindi di oggetti)
-     * @return records ArrayList<StockRecord> 
+     * @return records {@code ArrayList<StockRecord>}
      */
 	public static ArrayList<StockRecord> loadDataFromFile() {
 		System.out.println("path: " + filepath);

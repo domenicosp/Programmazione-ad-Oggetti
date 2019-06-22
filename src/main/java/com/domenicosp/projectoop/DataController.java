@@ -19,7 +19,7 @@ public class DataController {
 
 	/**
 	 * Restituisce i dati 
-	 * @return records ArrayList<StockData>
+	 * @return records {@code ArrayList<StockData>}
 	 */
 	@GetMapping("/data")
 	@ResponseBody

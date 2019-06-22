@@ -24,13 +24,18 @@ import org.json.simple.JSONValue;
  */
 public class DownloadfilefromURL {
 
-	// Attributi
+	/**
+	 * Attributi
+	 */
 	
 	private static final String DATA_URL = "https://www.dati.gov.it/api/3/action/package_show?id=3561d951-46e7-4a82-a712-04bcc5f47896";
 
 	private static final String CSV_DATASET = "hotspot.csv";
 
-	//Metodi
+	/**
+	 * Metodi
+	 */
+	
 	/**
 	 * Il metodo CreateDataFromURL è 
 	 * il metodo principale della classe DownloadfilefromURL 

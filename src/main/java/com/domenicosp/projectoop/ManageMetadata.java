@@ -18,7 +18,7 @@ public class ManageMetadata extends Metadato {
 
 /**
  * Preleva l'arraylist di oggetti di tipo metadato
- * @return metadati ArrayList<Metadato>
+ * @return metadati {@code ArrayList<Metadato>}
  */
 	public static ArrayList<Metadato> getMetadati() {
 		return metadati;
@@ -27,7 +27,7 @@ public class ManageMetadata extends Metadato {
 /**
  * il composeMetadata restituisce un arraylist di oggetti di tipo 
  * Metadato che contiene i metadati del data-set
- * @return metadati ArrayList<Metadato>
+ * @return metadati {@code ArrayList<Metadato>}
  */
 	public static ArrayList<Metadato> composeMetadata() {
 		
@@ -35,8 +35,6 @@ public class ManageMetadata extends Metadato {
 			
 			metadati.add(new Metadato(StockData.getInfoalias()[i], getsourcefieldFromRecord(i+1), getTypeFromRecord(i+1)));
 		}
-
-		//System.out.println(metadati);
 
 		return metadati;
 	}

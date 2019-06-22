@@ -1,7 +1,6 @@
 package com.domenicosp.projectoop;
 
 import java.util.ArrayList;
-//import org.springframework.stereotype.Component;
 
 /**
  * Classe che implementa i metodi per eseguire statistiche sui field di oggetti 
@@ -16,7 +15,6 @@ public class Statistic extends StaDat {
 
 	public Statistic(String field, double avg, double min, double max, double sum, int count) {
 		super(field, avg, min, max, sum, count);
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

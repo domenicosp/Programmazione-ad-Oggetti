@@ -3,7 +3,9 @@ package com.domenicosp.projectoop;
 
 public class Metadato {
 	
-	//Attributi della classe Metadato
+	/**
+	 * Attributi della classe Metadato
+	 */
 	
 	private String alias;
 	private String sourcefield;
@@ -15,9 +17,7 @@ public class Metadato {
 		this.type = type;
 	}
 
-	public Metadato() {
-		// TODO Auto-generated constructor stub
-	}
+	public Metadato() {	}
 
 	public String getAlias() {
 		return alias;

@@ -1,8 +1,9 @@
 package com.domenicosp.projectoop;
 
 
-
 public class Metadato {
+	
+	//Attributi della classe Metadato
 	
 	private String alias;
 	private String sourcefield;
@@ -47,9 +48,4 @@ public class Metadato {
 		return "Metadato [alias=" + alias + ", sourcefield=" + sourcefield + ", type=" + type + "]";
 	}
 	
-	
-	
-	
-	
-
 }
